@@ -1,0 +1,32 @@
+name: "Paragraphs Types"
+type: module
+description: "Paragraphs Types"
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10 || ^11
+package: "MT Configuration"
+dependencies:
+  - file
+  - image
+  - link
+  - paragraphs
+  - text
+config_devel:
+  - core.entity_form_display.paragraph.mt_highlight.default
+  - core.entity_form_display.paragraph.mt_highlight.mt_highlight_feature_tile
+  - core.entity_form_mode.paragraph.mt_highlight_feature_tile
+  - core.entity_view_display.paragraph.mt_highlight.default
+  - core.entity_view_display.paragraph.mt_highlight.mt_teaser
+  - core.entity_view_display.paragraph.mt_highlight.mt_teaser_tile
+  - core.entity_view_mode.paragraph.mt_teaser
+  - core.entity_view_mode.paragraph.mt_teaser_tile
+  - field.field.paragraph.mt_highlight.field_mt_highlight_body
+  - field.field.paragraph.mt_highlight.field_mt_highlight_image
+  - field.field.paragraph.mt_highlight.field_mt_highlight_image_fit
+  - field.field.paragraph.mt_highlight.field_mt_highlight_link
+  - field.field.paragraph.mt_highlight.field_mt_highlight_title
+  - field.storage.paragraph.field_mt_highlight_body
+  - field.storage.paragraph.field_mt_highlight_image
+  - field.storage.paragraph.field_mt_highlight_image_fit
+  - field.storage.paragraph.field_mt_highlight_link
+  - field.storage.paragraph.field_mt_highlight_title
+  - paragraphs.paragraphs_type.mt_highlight

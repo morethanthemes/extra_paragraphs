@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.mt_teaser_tile
+    - field.field.paragraph.mt_highlight.field_mt_highlight_body
+    - field.field.paragraph.mt_highlight.field_mt_highlight_image
+    - field.field.paragraph.mt_highlight.field_mt_highlight_image_fit
+    - field.field.paragraph.mt_highlight.field_mt_highlight_link
+    - field.field.paragraph.mt_highlight.field_mt_highlight_title
+    - image.style.1_1_960x960_focal_point_webp
+    - paragraphs.paragraphs_type.mt_highlight
+  module:
+    - image
+    - link
+    - text
+id: paragraph.mt_highlight.mt_teaser_tile
+targetEntityType: paragraph
+bundle: mt_highlight
+mode: mt_teaser_tile
+content:
+  field_mt_highlight_body:
+    type: text_default
+    label: hidden
+    settings: {}
+    third_party_settings: {}
+    weight: 2
+    region: content
+  field_mt_highlight_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ""
+      image_style: 1_1_960x960_focal_point_webp
+    third_party_settings: {}
+    weight: 0
+    region: content
+  field_mt_highlight_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ""
+      target: ""
+    third_party_settings: {}
+    weight: 3
+    region: content
+  field_mt_highlight_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 1
+    region: content
+hidden:
+  field_mt_highlight_image_fit: true
+  search_api_excerpt: true

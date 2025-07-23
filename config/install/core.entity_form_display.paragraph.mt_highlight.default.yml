@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_highlight.field_mt_highlight_body
+    - field.field.paragraph.mt_highlight.field_mt_highlight_image
+    - field.field.paragraph.mt_highlight.field_mt_highlight_image_fit
+    - field.field.paragraph.mt_highlight.field_mt_highlight_link
+    - field.field.paragraph.mt_highlight.field_mt_highlight_title
+    - image.style.1_1_300x300_focal_point_webp
+    - paragraphs.paragraphs_type.mt_highlight
+  module:
+    - image
+    - link
+    - text
+id: paragraph.mt_highlight.default
+targetEntityType: paragraph
+bundle: mt_highlight
+mode: default
+content:
+  field_mt_highlight_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ""
+    third_party_settings: {}
+  field_mt_highlight_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: 1_1_300x300_focal_point_webp
+    third_party_settings: {}
+  field_mt_highlight_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ""
+      placeholder_title: ""
+    third_party_settings: {}
+  field_mt_highlight_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+hidden:
+  created: true
+  field_mt_highlight_image_fit: true
+  status: true
+  uid: true

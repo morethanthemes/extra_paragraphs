@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_highlight_image_fit
+    - paragraphs.paragraphs_type.mt_highlight
+  module:
+    - options
+id: paragraph.mt_highlight.field_mt_highlight_image_fit
+field_name: field_mt_highlight_image_fit
+entity_type: paragraph
+bundle: mt_highlight
+label: 'Image fit'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: mt-image-fit-cover
+default_value_callback: ''
+settings: {  }
+field_type: list_string
