@@ -1,6 +1,6 @@
-# Extra Paragraphs
+# Extra Paragraphs Recipe
 
-This module provides a set of custom paragraph types to be used with the
+This recipe provides a set of custom paragraph types to be used with the
 [Paragraphs](https://www.drupal.org/project/paragraphs) module.
 
 ## Paragraph Types
@@ -21,20 +21,19 @@ an image, title, body text, and a link. It includes the following fields:
 
 ## Installation
 
-1.  Enable the module in the Drupal administration interface, or by running the
-    following Drush command:
-
-    ```bash
-    drush en extra_paragraphs
-    ```
-
-2.  This module requires the following modules to be enabled:
+1.  This recipe requires the following modules to be enabled:
 
     -   [File](https://www.drupal.org/project/file)
     -   [Image](https://www.drupal.org/project/image)
     -   [Link](https://www.drupal.org/project/link)
     -   [Paragraphs](https://www.drupal.org/project/paragraphs)
     -   [Text](https://www.drupal.org/project/text)
+
+2.  Apply the recipe using the following Drush command:
+
+    ```bash
+    drush recipe ../recipes/contrib/extra_paragraphs
+    ```
 
 ## Configuration
 

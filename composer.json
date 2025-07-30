@@ -1,0 +1,10 @@
+{
+    "name": "morethanthemes/extra_paragraphs",
+    "description": "Adds extra paragraphs types.",
+    "type": "drupal-recipe",
+    "require": {
+        "drupal/core": ">=10.4 || ^11",
+        "drupal/paragraphs": "^1.19"
+    },
+    "version": "1.0.0"
+}

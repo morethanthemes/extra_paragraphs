@@ -1,0 +1,11 @@
+name: "Extra Paragraphs Types"
+type: "Paragraphs Type"
+description: Adds extra paragraphs types.
+install:
+  - file
+  - image
+  - link
+  - paragraphs
+  - text
+config:
+  strict: false
