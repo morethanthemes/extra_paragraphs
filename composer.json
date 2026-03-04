@@ -1,7 +1,8 @@
 {
-    "name": "morethanthemes/extra_paragraphs",
-    "description": "Adds extra paragraphs types.",
+    "name": "drupal/extra_paragraphs",
+    "description": "Provides reusable Paragraph types (highlight, collapse, etc.) for editors.",
     "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
     "require": {
         "drupal/core": ">=10.4 || ^11",
         "drupal/paragraphs": "^1.19"
