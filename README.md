@@ -1,43 +1,37 @@
-# Extra Paragraphs Recipe
+# Extra Paragraphs
 
-This recipe provides a set of custom paragraph types to be used with the
-[Paragraphs](https://www.drupal.org/project/paragraphs) module.
+Reusable Paragraph types for content authors. This recipe provides ready‑to‑use
+paragraph types such as **Highlight** and **Collapse** so editors can build
+modular, media-rich pages quickly.
 
-## Paragraph Types
+## What this recipe provides
 
-### Highlight
+- Paragraph type: Highlight (title, body, image, link)
+- Paragraph type: Collapse (title + rich body for collapsible sections)
+- Field and display configuration for editor and teaser presentations
 
-The "Highlight" paragraph type provides a way to feature a piece of content with
-an image, title, body text, and a link. It includes the following fields:
+## Requirements
 
--   **Title** (`field_mt_highlight_title`): The title of the highlight.
--   **Body** (`field_mt_highlight_body`): The main text content.
--   **Image** (`field_mt_highlight_image`): An image to display with the
-    highlight.
--   **Image Fit** (`field_mt_highlight_image_fit`): Specifies how the image
-    should fit within its container (e.g., "cover", "contain").
--   **Link** (`field_mt_highlight_link`): A URL for a call-to-action or more
-    information.
+- Drupal core **10.4+**
+- Paragraphs module
 
 ## Installation
 
-1.  This recipe requires the following modules to be enabled:
+Install the recipe via Composer or apply it locally with Drush:
 
-    -   [File](https://www.drupal.org/project/file)
-    -   [Image](https://www.drupal.org/project/image)
-    -   [Link](https://www.drupal.org/project/link)
-    -   [Paragraphs](https://www.drupal.org/project/paragraphs)
-    -   [Text](https://www.drupal.org/project/text)
+```bash
+composer require drupal/extra_paragraphs
+# or, from a local checkout:
+# drush recipe ../recipes/extra_paragraphs
+```
 
-2.  Apply the recipe using the following Drush command:
+After installation, manage paragraph types under *Structure → Paragraphs types*.
 
-    ```bash
-    drush recipe ../recipes/contrib/extra_paragraphs
-    ```
+## Customization
 
-## Configuration
+The exported configuration is in `config/` — edit and re-export if you make
+changes you want to preserve in the recipe.
 
-The paragraph types are automatically configured upon installation. You can
-manage the fields and display settings for the "Highlight" paragraph type by
-navigating to the "Paragraphs types" administration page
-(`/admin/structure/paragraphs_type`).
+## License
+
+GPL-2.0-or-later

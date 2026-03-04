@@ -1,6 +1,6 @@
-name: "Extra Paragraphs Types"
-type: "Paragraphs Type"
-description: Adds extra paragraphs types.
+name: "Extra Paragraphs"
+type: "Paragraphs"
+description: 'Provides editor-friendly Paragraph types such as Highlight and Collapse, including fields and display settings for quick page composition.'
 install:
   - file
   - image
